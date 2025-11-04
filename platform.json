@@ -1,0 +1,35 @@
+{
+  "name": "greycode_iot_dev",
+  "title": "Greycode IoT Platform",
+  "description": "Custom PlatformIO platform for Greycode IoT Development Boards",
+  "homepage": "https://greycode.co.za/",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greycode-za/greycode-iot-platform.git"
+  },
+  "packageRepositories": [
+    "https://dl.registry.platformio.org/"
+  ],
+  "frameworks": {
+    "arduino": {
+      "package": "framework-arduinoespressif32"
+    }
+  },
+  "packages": {
+    "toolchain-xtensa32": {
+      "type": "toolchain",
+      "version": "~2.80400.0"
+    },
+    "framework-arduinoespressif32": {
+      "type": "framework",
+      "optional": true
+    },
+    "tool-esptoolpy": {
+      "type": "uploader"
+    }
+  },
+  "extends": "platformio/platform-espressif32"
+}
+
